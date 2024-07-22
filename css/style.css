@@ -1,0 +1,55 @@
+/* general */
+
+* {
+    font-family: "Changa", sans-serif;
+}
+
+header {
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+}
+
+main {
+    height: calc(100vh - 170px);
+    background-color: black;
+    /* background-image: url("https://img.freepik.com/vettori-gratuito/priorita-bassa-dell-onda-di-particelle-di-gradiente_52683-121617.jpg?t=st=1721666250~exp=1721669850~hmac=36ec692a876cc9c63d275357aaf78eaa6244bbd520581e353f4735843ccd8745&w=1800");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#squareContainer {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: calc(100% / 5);
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.499);
+    background-color: rgba(255, 255, 255, 0.179);
+}
+
+.squareSelected {
+    color: rgb(90, 5, 87);
+    border-top: 3px solid rgb(2, 250, 238);
+    border-right: 3px solid rgb(2, 250, 238);
+    border-bottom: 3px solid rgb(179, 24, 182);
+    border-left: 3px solid rgb(179, 24, 182);
+    background-color: #8ef2fc;
+    background-image: linear-gradient(62deg, #8ef2fc 0%, #f9c3fc 100%);
+}
+
+footer {
+    height: 70px;
+}
