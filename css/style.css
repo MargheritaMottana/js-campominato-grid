@@ -56,18 +56,20 @@ main {
     cursor: pointer;
 }
 
-/* #square {
+#squareContainer .facile {
     width: 100px;
     height: 100px;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#squareContainer .medio {
+    width: calc(1000px / 9);
+    height: calc(1000px / 9);
+}
 
-    color: white;
-    line-height: 0.6rem;
-    font-size: 1.2rem;
-} */
+#squareContainer .difficile {
+    width: calc(1000px / 7);
+    height: calc(1000px / 7);
+}
 
 .squareSelected {
     border-top: 3px solid rgb(2, 250, 238);

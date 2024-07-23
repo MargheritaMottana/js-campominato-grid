@@ -45,6 +45,16 @@ playBtn.addEventListener('click', function () {
         // metto il quadrato dentro il suo container
         squareContainer.append(square);
 
+        if (squaregrid == 100) {
+            square.classList.add('facile');
+        }
+        else if (squaregrid == 81) {
+            square.classList.add('medio');
+        }
+        else if (squaregrid == 49) {
+            square.classList.add('difficile')
+        };
+
         //ascolto il click
         square.addEventListener('click', function () {
 
