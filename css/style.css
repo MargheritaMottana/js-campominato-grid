@@ -15,25 +15,34 @@ header {
 main {
     height: calc(100vh - 170px);
     background-color: black;
-    /* background-image: url("https://img.freepik.com/vettori-gratuito/priorita-bassa-dell-onda-di-particelle-di-gradiente_52683-121617.jpg?t=st=1721666250~exp=1721669850~hmac=36ec692a876cc9c63d275357aaf78eaa6244bbd520581e353f4735843ccd8745&w=1800");
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 #squareContainer {
-    width: 1000px;
+    width: 1006px;
+    height: calc(100vh - 170px);
+    overflow-y: auto;
+
     margin: 0 auto;
-    padding: 5px;
+
     display: flex;
     flex-wrap: wrap;
+
     border-right: 3px solid rgb(2, 250, 238);
     border-bottom: 3px solid rgb(2, 250, 238);
     border-left: 3px solid rgb(179, 24, 182);
     border-top: 3px solid rgb(179, 24, 182);
 }
 
-.square {
-    width: calc(100% / 10);
+#squareContainer :nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+#squareContainer :nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.225);
+}
+
+#squareContainer>* {
+    width: 100px;
     height: 100px;
 
     display: flex;
@@ -44,18 +53,30 @@ main {
     line-height: 0.6rem;
     font-size: 1.2rem;
 
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.179);
+    cursor: pointer;
 }
 
+/* #square {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    line-height: 0.6rem;
+    font-size: 1.2rem;
+} */
+
 .squareSelected {
-    color: rgb(90, 5, 87);
     border-top: 3px solid rgb(2, 250, 238);
     border-right: 3px solid rgb(179, 24, 182);
     border-bottom: 3px solid rgb(179, 24, 182);
     border-left: 3px solid rgb(2, 250, 238);
-    background-color: #8ef2fc;
-    background-image: linear-gradient(62deg, #8ef2fc 0%, #f9c3fc 100%);
+
+    background-color: #efb1f3;
+    background-image: linear-gradient(135deg, #efb1f3 0%, #8ef2fc 100%);
 }
 
 footer {
