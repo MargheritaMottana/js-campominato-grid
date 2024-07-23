@@ -12,8 +12,30 @@ const playBtn = document.getElementById('gioca');
 playBtn.addEventListener('click', function () {
     console.log('Ho cliccato');
 
+    // dichiaro il container
+    const container = document.getElementById('squareContainer')
+
+    //aggiungere le opzioni del gioco
+    const opzioniGioco = document.getElementById('opzioniGioco')
+    // controllo che il valore di opzioni gioco sia corretto
+    console.log(opzioniGioco.value)
+
+    // aggiungo variabile per cambiare il numero di celle in base alla difficoltà
+    // quella di base è 100
+    let squaregrid = 100;
+
+    if (opzioniGioco.value == 'Medium') {
+        squaregrid = 81;
+    }
+    else if (opzioniGioco.value == 'Hard') {
+        squaregrid = 49;
+    };
+
+    // per far sì che ogni volta che clicco, non mi si duplichino i quadrati, devo svuotare il container
+    container.innerHTML = ''
+
     // genero un ciclo che mi scriva 100 elementi al clicl
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= squaregrid; i++) {
         console.log(i);
 
         // creo l'elemento in html
@@ -33,4 +55,4 @@ playBtn.addEventListener('click', function () {
 
     };
 
-})
+});
